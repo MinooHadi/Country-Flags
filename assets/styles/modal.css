@@ -1,0 +1,78 @@
+.modal {
+  width: 70%;
+  height: fit-content;
+  position: fixed;
+  top: 200px;
+  right: 15%;
+  bottom: 0;
+  left: 15%;
+  box-shadow: 10px 10px 20px 10px rgb(105, 94, 94);
+  border-radius: 10px;
+}
+
+.about-flag {
+  display: flex;
+  background-color: #f8f8f8;
+  justify-content: space-around;
+  border-radius: 10px 10px 0 0;
+}
+
+#capital,
+#flag,
+#time {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  height: 300px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.info-flag {
+  background-color: #3075f4;
+  border-radius: 0 0 10px 10px;
+}
+
+table {
+  margin: auto;
+  width: 100%;
+}
+
+th {
+  padding: 10px;
+  width: 10%;
+  color: white;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+td {
+  text-align: center;
+  padding: 10px;
+  font-size: 16px;
+  color: rgb(191, 191, 215);
+}
+
+#close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+
+.modalDivFlags {
+  width: 80%;
+  height: 200px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+#time p, #capital p {
+  vertical-align: middle;
+  font-size: 25px;
+  padding-top: 50px;
+}
+
+.blur {
+  filter: blur(3px);
+}

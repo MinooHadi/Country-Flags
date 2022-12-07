@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Country Flags</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="assets/styles/index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <div class="logo">
+          <img src="assets/images/countryflags.svg" alt="logo" />
+        </div>
+        <div class="search">
+          <input type="search" placeholder="search by country name ..." onkeyup="search(this.value)"/>
+          <i class="fa fa-search"></i>
+        </div>
+        <div class="sort" onclick="sort()">
+          <p>Sort Alphabetically</p>
+          <i class="fa fa-caret-down"></i>
+        </div>
+      </nav>
+      <div class="continent-name">
+        <a href="#All">All</a>
+        <a href="#europe-flags">Europe</a>
+        <a href="#africa-flags">Africa</a>
+        <a href="#asia-flags">Asia</a>
+        <a href="#north-america-flags">North America</a>
+        <a href="#south-america-flags">South America</a>
+        <a href="#antarctica-flags">Antarctica</a>
+        <a href="#oceania-flags">Oceania</a>
+      </div>
+      <div class="all-continent-flags">
+        <h3>All</h3>
+        <div class="continent-flags">
+          <h3 id="europe-flags" class="continent-h3">Europe</h3>
+          <div id="Europe" class="continents"></div>
+        </div>
+        <div class="continent-flags">
+          <h3 id="africa-flags" class="continent-h3">Africa</h3>
+          <div id="Africa" class="continents"></div>
+        </div>
+        <div class="continent-flags">
+          <h3 id="asia-flags" class="continent-h3">Asia</h3>
+          <div id="Asia" class="continents"></div>
+        </div>
+        <div class="continent-flags">
+          <h3 id="north-america-flags" class="continent-h3">North America</h3>
+          <div id="NorthAmerica" class="continents"></div>
+        </div>
+        <div class="continent-flags">
+          <h3 id="south-america-flags" class="continent-h3">South America</h3>
+          <div id="SouthAmerica" class="continents"></div>
+        </div>
+        <div class="continent-flags">
+          <h3 id="antarctica-flags" class="continent-h3">Antarctica</h3>
+          <div id="Antarctica" class="continents"></div>
+        </div>
+        <div class="continent-flags">
+          <h3 id="oceania-flags" class="continent-h3">Oceania</h3>
+          <div id="Oceania" class="continents"></div>
+        </div>
+      </div>
+    </div>
+    <div class="modal" style="display: none">
+      <i class="fa fa-close" id="close"></i>
+      <div class="about-flag">
+        <div id="capital">
+          <h3>Capital</h3>
+        </div>
+        <div id="flag">
+          <h3 id="country-name"></h3>
+        </div>
+        <div id="time">
+          <h3>Time</h3>
+        </div>
+      </div>
+      <div class="info-flag">
+        <table>
+          <thead>
+            <tr>
+              <th>Area</th>
+              <th>Languages</th>
+              <th>Population</th>
+              <th>Cordinate</th>
+              <th>Borders</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
